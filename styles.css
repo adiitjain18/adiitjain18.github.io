@@ -231,3 +231,50 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+/* Theme Toggle Button - Added 2025-09-08 */
+#theme-toggle {
+  background: transparent;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+#theme-toggle:hover {
+  background: #00ffff;
+  color: #0d1117;
+  box-shadow: 0 0 12px #00ffff;
+}
+/* Light Mode Styles - Added 2025-09-08 */
+body.light-mode {
+  background-color: #f4f4f4;
+  color: #0d1117;
+}
+
+body.light-mode nav {
+  background: #e6edf3;
+}
+
+body.light-mode nav a {
+  color: #0d1117;
+}
+
+body.light-mode .project-card {
+  background: #fff;
+  border-color: #0d1117;
+}
+
+body.light-mode a, body.light-mode button {
+  color: #0d1117;
+  border-color: #0d1117;
+}
+
+body.light-mode a:hover, body.light-mode button:hover {
+  background: #0d1117;
+  color: #f4f4f4;
+  box-shadow: 0 0 12px #0d1117;
+}

@@ -73,3 +73,15 @@ function revealSections() {
 
 window.addEventListener("scroll", revealSections);
 revealSections(); // run on page load
+// Dark/Light Mode Toggle - Added 2025-09-08
+const toggleButton = document.getElementById("theme-toggle");
+toggleButton.addEventListener("click", function() {
+  document.body.classList.toggle("light-mode");
+  
+  // Change icon
+  if (document.body.classList.contains("light-mode")) {
+    toggleButton.textContent = "☀️";
+  } else {
+    toggleButton.textContent = "🌙";
+  }
+});
