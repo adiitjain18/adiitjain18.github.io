@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -18,15 +18,15 @@
     </nav>
   </header>
 
-  <main>
+  <main> -->
     <!-- HERO -->
-    <section id="home" class="hero">
+    <!-- <section id="home" class="hero">
       <div class="hero-content">
         <h1>Hi, I'm <span class="name">Aditi</span></h1>
         <p class="tagline"><span id="typed"></span><span class="cursor">|</span></p>
-        <div class="cta">
+        <div class="cta"> -->
           <!-- Replace resume.pdf with your file later -->
-          <a href="resume.pdf" download class="btn">Download Resume</a>
+          <!-- <a href="resume.pdf" download class="btn">Download Resume</a>
           <a href="#contact" class="btn outline">Contact Me</a>
         </div>
       </div>
@@ -35,23 +35,23 @@
         <span class="shape s2"></span>
         <span class="shape s3"></span>
       </div>
-    </section>
+    </section> -->
 
     <!-- ABOUT -->
-    <section id="about" class="section">
+    <!-- <section id="about" class="section">
       <h2>About Me</h2>
       <p>Short bio — who you are, what you do, and the tech you love.</p>
       <div class="skills">
         <div>HTML</div><div>CSS</div><div>JavaScript</div><div>React</div>
       </div>
-    </section>
+    </section> -->
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <!-- <section id="projects" class="section">
       <h2>Projects</h2>
-      <div class="projects-grid">
+      <div class="projects-grid"> -->
         <!-- Copy this card to add projects -->
-        <article class="card">
+        <!-- <article class="card">
           <h3>Project Title</h3>
           <p>Short description. Tech: HTML, CSS, JS.</p>
           <div class="card-links">
@@ -60,20 +60,20 @@
           </div>
         </article>
       </div>
-    </section>
+    </section> -->
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
+    <!-- <section id="experience" class="section">
       <h2>Experience</h2>
       <p>Role, Company, Dates — short bullets.</p>
-    </section>
+    </section> -->
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <!-- <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>Prefer email? <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>Prefer email? <a href="mailto:youremail@example.com">youremail@example.com</a></p> -->
       <!-- Simple contact (no backend). We will cover public-form options later -->
-      <form onsubmit="alert('This is a demo contact form — we will wire it up later'); return false;">
+      <!-- <form onsubmit="alert('This is a demo contact form — we will wire it up later'); return false;">
         <input name="name" placeholder="Your name" required />
         <input name="email" type="email" placeholder="Your email" required />
         <textarea name="message" placeholder="Message" required></textarea>
@@ -86,6 +86,141 @@
     <p>© <span id="year"></span> Aditi.</p>
   </footer>
 
+  <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arjun's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ================= HOMEPAGE ================= -->
+  <header id="home">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#domains">Domains</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h1 class="tagline"><span id="tagline"></span>
+        <!-- Hi there, I’m Arjun – a curious technologist with a multi-domain mindset. -->
+    </h1>
+      <p>🎓 Recent Computer Science Graduate | Builder | Cross-domain Explorer</p>
+      <p>
+        Whether it’s writing clean code, analyzing data trends, designing user-centric interfaces, 
+        or exploring product strategies, I thrive in learning and adapting.
+      </p>
+    </section>
+  </header>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <p>
+      I'm a recent Computer Science graduate with a passion for exploring how technology interacts 
+      with real-world problems.
+    </p>
+    <p>
+      From developing responsive web apps to dabbling in data pipelines, and even wireframing user 
+      interfaces, I find myself drawn to understanding the bigger picture.
+    </p>
+    <ul>
+      <li>Core Values: Curiosity, Collaboration, Clarity</li>
+      <li>Education: B.Tech in Computer Science – XYZ University</li>
+    </ul>
+    <a href="#">Download Resume</a>
+  </section>
+
+  <!-- ================= DOMAINS ================= -->
+  <section id="domains" class="reveal">
+    <h2>Domains of Interest</h2>
+    <div>
+      <article>
+        <h3>🧠 Data Science</h3>
+        <p>Interested in machine learning, data storytelling, and analytics.</p>
+        <a href="domain-datascience.html">Go to Page</a>
+      </article>
+      <article>
+        <h3>💻 Software Development</h3>
+        <p>I enjoy building full-stack applications and solving algorithmic problems.</p>
+        <a href="domain-software.html">Go to Page</a>
+      </article>
+      <article>
+        <h3>🎨 UI/UX Design</h3>
+        <p>Focused on how tech feels – not just how it works.</p>
+        <a href="domain-uiux.html">Go to Page</a>
+      </article>
+      <article>
+        <h3>📊 Product Management</h3>
+        <p>Love connecting dots between users, developers, and design.</p>
+        <a href="domain-product.html">Go to Page</a>
+      </article>
+      <article>
+        <h3>🔐 Cybersecurity</h3>
+        <p>Exploring secure software and systems for modern challenges.</p>
+        <a href="domain-cybersecurity.html">Go to Page</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="reveal">
+    <!-- <h2>Projects</h2>
+    <p>All projects listed here with filtering by domain coming soon.</p> -->
+    <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p class="project-info">React-based dynamic portfolio with theme switching.</p>
+      <a href="#">GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>Task Manager API</h3>
+      <p class="project-info">Flask REST API with JWT authentication.</p>
+      <a href="#">GitHub</a>
+    </div>
+    <!-- Add more project cards here -->
+  </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <p>✉️ Let’s connect! I’d love to hear about opportunities, collaborations, or discussions over tech ☕.</p>
+    <ul>
+      <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+      <li>LinkedIn: <a href="#">LinkedIn Profile</a></li>
+      <li>GitHub: <a href="#">GitHub Profile</a></li>
+      <li><a href="#">Download General Resume</a></li>
+    </ul>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 Arjun’s Portfolio | Built with ❤️ and curiosity</p>
+    <ul>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">GitHub</a></li>
+    </ul>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
