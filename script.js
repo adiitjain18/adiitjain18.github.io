@@ -85,3 +85,16 @@ toggleButton.addEventListener("click", function() {
     toggleButton.textContent = "🌙";
   }
 });
+// Contact Form Validation - Added 2025-09-08
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function(e) {
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !message) {
+    e.preventDefault(); // prevent form submission
+    alert("Please fill in all fields before submitting.");
+  }
+});

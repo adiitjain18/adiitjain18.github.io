@@ -203,7 +203,7 @@
       <li>GitHub: <a href="#">GitHub Profile</a></li>
       <li><a href="#">Download General Resume</a></li>
     </ul>
-    <form>
+    <!-- <form>
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name"><br>
       <label for="email">Email:</label><br>
@@ -211,7 +211,13 @@
       <label for="message">Message:</label><br>
       <textarea id="message" name="message"></textarea><br>
       <button type="submit">Send</button>
-    </form>
+    </form> -->
+    <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send</button>
+  </form>
   </section>
 
   <!-- ================= FOOTER ================= -->
