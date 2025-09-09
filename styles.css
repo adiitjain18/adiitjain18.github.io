@@ -75,7 +75,7 @@ body {
   color: #e6edf3;
   line-height: 1.6;
   padding: 0 1rem;
-  line-height: 1.6;
+  line-height: 2.5;
 }
 
 /* Headings */
@@ -278,4 +278,45 @@ body.light-mode a:hover, body.light-mode button:hover {
   background: #0d1117;
   color: #f4f4f4;
   box-shadow: 0 0 12px #0d1117;
+}
+/* Domain Cards with Dropdown Skills - Added 2025-09-09 */
+.domain-card {
+  background: #161b22;
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.domain-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.domain-card button {
+  margin: 0.5rem 0;
+  padding: 0.4rem 0.8rem;
+  background: transparent;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.domain-card button:hover {
+  background: #00ffff;
+  color: #0d1117;
+}
+
+.skills-list {
+  display: none;
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.skills-list li {
+  margin: 0.3rem 0;
 }

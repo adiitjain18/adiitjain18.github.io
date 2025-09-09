@@ -94,7 +94,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arjun's Portfolio</title>
+  <title>Aditi's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -113,13 +113,12 @@
     </nav>
     <section>
       <h1 class="tagline"><span id="tagline"></span>
-        <!-- Hi there, I’m Arjun – a curious technologist with a multi-domain mindset. -->
+        <!-- Hi there, I’m Aditi – a curious technologist with a multi-domain mindset. -->
     </h1>
-      <p>🎓 Recent Computer Science Graduate | Builder | Cross-domain Explorer</p>
-      <p>
-        Whether it’s writing clean code, analyzing data trends, designing user-centric interfaces, 
-        or exploring product strategies, I thrive in learning and adapting.
-      </p>
+      <h2>🎓 VLSI | AIML | Embedded Systems | Software Development </h2>
+      <!-- <p>
+        Whether it's crafting efficient algorithms, troubleshooting intricate circuits, or leveraging data-driven insights, I'm passionate about learning, adapting, and pushing boundaries.
+      </p> -->
     </section>
   </header>
 
@@ -127,24 +126,22 @@
   <section id="about" class="reveal">
     <h2>About Me</h2>
     <p>
-      I'm a recent Computer Science graduate with a passion for exploring how technology interacts 
-      with real-world problems.
+      I'm a recent ECE graduate with a passion for technology and Cross-domain Exploration.
     </p>
     <p>
-      From developing responsive web apps to dabbling in data pipelines, and even wireframing user 
-      interfaces, I find myself drawn to understanding the bigger picture.
-    </p>
+        Whether it's crafting efficient algorithms, troubleshooting intricate circuits, or leveraging data-driven insights, I'm passionate about learning, adapting, and pushing boundaries.
+      </p>
     <ul>
-      <li>Core Values: Curiosity, Collaboration, Clarity</li>
-      <li>Education: B.Tech in Computer Science – XYZ University</li>
+      <li><undeline>Core Values:</undeline> Curiosity, Collaboration, Clarity</li>
+      <li><underline>Education:</underline> B.E. in Electronics and Commnunication Engineering – Dayananda Sagar College of Engineering</li>
     </ul>
-    <a href="#">Download Resume</a>
+    <!-- <a href="#">Download Resume</a> -->
   </section>
 
   <!-- ================= DOMAINS ================= -->
   <section id="domains" class="reveal">
     <h2>Domains of Interest</h2>
-    <div>
+    <!-- <div>
       <article>
         <h3>🧠 Data Science</h3>
         <p>Interested in machine learning, data storytelling, and analytics.</p>
@@ -170,7 +167,33 @@
         <p>Exploring secure software and systems for modern challenges.</p>
         <a href="domain-cybersecurity.html">Go to Page</a>
       </article>
-    </div>
+    </div> -->
+
+    <div class="domain-card">
+    <h3>💻 Software Development</h3>
+    <p>I enjoy building full-stack applications and solving algorithmic problems.</p>
+    <button class="skill-btn">View Skillset</button>
+    <ul class="skills-list">
+      <li>JavaScript / React / Node.js</li>
+      <li>Python / Flask</li>
+      <li>SQL / MongoDB</li>
+      <li>Git / CI/CD</li>
+    </ul>
+    <button class="project-btn" data-domain="software">View Projects</button>
+  </div>
+
+  <div class="domain-card">
+    <h3>📊 Data Science</h3>
+    <p>Interested in machine learning, data storytelling, and analytics.</p>
+    <button class="skill-btn">View Skillset</button>
+    <ul class="skills-list">
+      <li>Python / Pandas / NumPy</li>
+      <li>Scikit-learn / XGBoost</li>
+      <li>SQL</li>
+      <li>Tableau</li>
+    </ul>
+    <button class="project-btn" data-domain="data">View Projects</button>
+  </div>
   </section>
 
   <!-- ================= PROJECTS ================= -->
@@ -179,12 +202,12 @@
     <p>All projects listed here with filtering by domain coming soon.</p> -->
     <h2>Projects</h2>
   <div class="projects-container">
-    <div class="project-card">
+    <div class="project-card domain-software">
       <h3>Portfolio Website</h3>
       <p class="project-info">React-based dynamic portfolio with theme switching.</p>
       <a href="#">GitHub</a>
     </div>
-    <div class="project-card">
+    <div class="project-card data-domain">
       <h3>Task Manager API</h3>
       <p class="project-info">Flask REST API with JWT authentication.</p>
       <a href="#">GitHub</a>

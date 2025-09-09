@@ -42,7 +42,7 @@
 
 // Typewriter effect for tagline
 document.addEventListener("DOMContentLoaded", function () {
-  const text = "Hi there, I’m Arjun – a curious technologist with a multi-domain mindset."; // ✨ Your tagline
+  const text = "Hi there, I’m Aditi– Exploring the intersection of technology and possibility with a multi-domain mindset."; // ✨ Your tagline
   let i = 0;
   const speed = 100; // typing speed in ms
 
@@ -97,4 +97,27 @@ contactForm.addEventListener("submit", function(e) {
     e.preventDefault(); // prevent form submission
     alert("Please fill in all fields before submitting.");
   }
+});
+// Domain Cards Interactivity - Added 2025-09-09
+
+// Toggle skillset dropdown
+document.querySelectorAll(".skill-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const skillsList = btn.nextElementSibling;
+    skillsList.style.display =
+      skillsList.style.display === "block" ? "none" : "block";
+  });
+});
+
+// Scroll to related projects
+document.querySelectorAll(".project-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const domain = btn.getAttribute("data-domain");
+    const target = document.querySelector(`#projects .${domain}-project`);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+      target.style.boxShadow = "0 0 12px #00ffff";
+      setTimeout(() => (target.style.boxShadow = ""), 2000);
+    }
+  });
 });
